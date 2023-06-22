@@ -1,5 +1,12 @@
 # Changelog
 
+## Release 0.4.0 [2023-06-22]
+
+ - Use `puppet-augeasproviders_core` and `puppet-augeasproviders_sysctl` dependecies instead of `herculesteam-augeasproviders_core` and `herculesteam-augeasproviders_sysctl` (#7)
+ - Don't quote integers
+
+[Full Changelog](https://github.com/deric/puppet-sysctl_conf/compare/v0.3.0...v0.4.0)
+
 ## Release 0.3.0 [2022-05-05]
 
  - Allow passing values as `Integer` (#3, [#5](https://github.com/deric/puppet-sysctl_conf/pull/5))

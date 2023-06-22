@@ -1,7 +1,7 @@
 # Puppet sysctl_conf
 
 [![Puppet
-Forge](http://img.shields.io/puppetforge/v/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf) [![Build Status](https://img.shields.io/github/workflow/status/deric/puppet-sysctl_conf/Static%20&%20Spec%20Tests/master)](https://github.com/deric/puppet-sysctl_conf/actions?query=branch%3Amaster) [![Puppet Forge
+Forge](http://img.shields.io/puppetforge/v/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf) [![Test](https://github.com/deric/puppet-sysctl_conf/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/deric/puppet-sysctl_conf/actions/workflows/main.yml) [![Puppet Forge
 Downloads](http://img.shields.io/puppetforge/dt/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf/scores)
 
 Configure Linux kernel parameters at runtime via Puppet's Hiera based `sysctl.conf` management.
