@@ -18,3 +18,9 @@ appveyor.yml:
   paths:
     - '/.vscode/'
     - '/.devcontainer/'
+spec/spec_helper.rb:
+  coverage_report: true
+Gemfile:
+  optional:
+    ':release':
+      - gem: 'puppet-blacksmith'
