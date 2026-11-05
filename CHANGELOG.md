@@ -1,5 +1,15 @@
 # Changelog
 
+## Release 2.0.0 [2026-11-05]
+
+ - Drop support for Debian 10 and Ubuntu 18.04
+ - Add support for Debian 13 and Ubuntu 24.04
+ - Allow Puppet 9 (`>= 7.0.0 < 10.0.0`)
+ - Allow `puppet-augeasproviders_core` < 6.0.0 and `puppet-augeasproviders_sysctl` < 5.0.0
+ - PDK update to 3.4.0 (templates 3.5.1)
+ - CI: test against Ruby 3.2 and 3.3 with Puppet 8, drop Ruby 2.7 and 3.1 (#9)
+
+[Full Changelog](https://github.com/deric/puppet-sysctl_conf/compare/v1.0.0...v2.0.0)
 
 ## Release 1.0.0 [2023-06-25]
 
