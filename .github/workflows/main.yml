@@ -5,7 +5,7 @@ on:
   - push
 
 env:
-  BUNDLE_WITHOUT: release
+  BUNDLE_WITHOUT: release_prep:system_tests
 
 jobs:
   test:
@@ -14,21 +14,16 @@ jobs:
       fail-fast: false
       matrix:
         ruby:
+          - "3.3"
           - "3.2"
-          - "3.1"
-          - "2.7"
         puppet:
           - "~> 8.0"
-          - "~> 7.0"
-        exclude:
-          - ruby: "2.7"
-            puppet: "~> 8.0"
 
     name: "Ruby ${{ matrix.ruby }} - Puppet ${{ matrix.puppet }}"
     env:
-      PUPPET_VERSION: ${{ matrix.puppet }}
+      PUPPET_GEM_VERSION: ${{ matrix.puppet }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v1
         with:
